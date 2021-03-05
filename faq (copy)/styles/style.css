@@ -1,0 +1,118 @@
+:root{
+  /* TEXT */
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+
+  /* GRADIENT */
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+
+  /* Fuente*/
+  --font-famil: 'Kumbh Sans', sans-serif;;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(0deg, var(--Soft-violet) 0%,var(--Soft-blue) 100%);
+}
+.main{
+  padding: 20px;
+}
+.container{
+  position: relative;
+  top: -115px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-family: var(--font-famil);
+  font-size: 12px;
+}
+.container-card{
+  width: auto;
+  display: grid;
+  padding: 100px 20px 50px 20px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px 0px var(--Very-dark-desaturated-blue);
+}
+.container-img{
+  position: relative;
+  width: 270px;
+  height: 150px;
+  top: 40px;
+  align-self: center;
+}
+.container-img-shadow{
+  position: relative;
+  top:-100px;
+  left: 20px;
+}
+.container-faq {
+  width: 250px;
+}
+.container-faqbox-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-faq h1{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.container-faqbox{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.container-faqbox img{
+  display: block;
+  height: 7px;
+  transition: all .5s;
+}
+
+.container-faqbox-title{
+  margin-bottom: 10px;
+}
+.container-faqbox-answers{
+  display: none;
+}
+.weight{
+  font-weight: 700;
+}
+.rotate{
+  transform: rotate(180deg);
+}
+
+.block{
+  display: block ;
+}
+
+@media (min-width:700px){
+  .main{
+    height: 100vh;
+  }
+  .container{
+    max-width: 600px;
+  }
+  .container-card{
+    justify-content: end;
+  }
+  .container-img{
+    align-self: start;
+    top: 215px;
+    left: -95px;
+  }
+  .container-img img{
+    width: 350px;
+  }
+}

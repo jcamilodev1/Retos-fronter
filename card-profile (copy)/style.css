@@ -1,0 +1,134 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --font-family: 'Kumbh Sans', sans-serif;
+
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  
+}
+html{
+  font-family: var(--font-family);
+}
+
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+  padding: 20px;
+  overflow: hidden;
+}
+.img-bottom{
+  position: absolute;
+  z-index: 2;
+  top : 400px;
+  right: -400px;
+}
+.img-top{
+  position: absolute;
+  z-index: 3;
+  top: -600px;
+  right: 400px;
+}
+.card{
+  z-index: 4;
+  width: 355px;
+  height: 380px;
+  display: grid;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.background-card{
+  position: relative;
+  width: 100%;
+  height: 140px;
+  background-image: url('./images/bg-pattern-card.svg');
+}
+.img-container{
+  position: relative;
+  top: 85px;
+  background-color: white;
+  width: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.img-container img{
+  width: 100%;
+  padding: 5px;
+  border-radius: 100px;
+}
+.card-info-container{
+  width: 100%;
+  display: grid;
+  margin-top: 10px;
+  grid-template-rows: 1fr 2fr;
+  border-bottom: 10px red;
+}
+.card-info-name {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  color: var(--Very-dark-desaturated-blue)
+}
+.card-info-container h2{
+  text-align: center;
+  font-size: 18px;
+}
+.card-info-name span{
+  color: var(--Dark-gray);
+  font-weight: 500;
+}
+.card-info-name p{
+  text-align: center;
+  color: var(--Dark-gray);
+  margin-top: 5px;
+}
+.card-info-container-data{
+  width: 100%;
+  display: flex;
+  border-top: 0.5px solid var(--Dark-grayish-blue);
+  align-items: center;
+}
+.card-info-data p{
+  text-align: center;
+  color: var(--Dark-gray);
+  font-size: 10px;
+}
+.attribution{
+  background-color: var(--Dark-cyan);
+  color: white;
+  text-align: center;
+}
+.attribution a{
+  color: white;
+  text-decoration: none;
+}
+.attribution a:hover{
+  color: var(--Dark-grayish-blue);
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .card{
+    width: 280px;
+  }
+  .img-bottom{
+    width: 700px;
+  }
+  .img-top{
+    width: 700px;
+    top: -400px;
+    right: 200px;
+  }
+}
