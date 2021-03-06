@@ -1,0 +1,120 @@
+:root{
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+  --font: 'Inter', sans-serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-family: var(--font);
+  background-color: rgba(119, 119, 119, 0.144);
+
+}
+
+.conteiner__card{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 300px;
+}
+.conteiner__card-img{
+  display: grid;
+  position: relative;
+}
+.container__img-profile{
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.container__img-profile img{
+  width: 80%;
+  height: 250px;
+  border-radius: 10px;
+}
+.toggle{
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  padding: 10px 10px;
+  border-radius: 40px;
+  background-color: rgb(223, 223, 223);
+}
+.toggle img {
+  cursor: pointer;
+  width: 8px;
+} 
+.patterns-bg{
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.patterns-bg img{
+  width: 100%;
+}
+.container__card-txt{
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  padding: 20px;
+  color: var(--Dark-Blue);
+  font-weight: 300;
+  font-family: 'Inter' ;
+}
+.container__txt-descript p{
+  text-align: center;
+}
+.container__txt-profile p{
+  text-align: center;
+}
+.container__txt-profile :first-child{
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.container__txt-profile :last-child{
+  margin-top: 5px;
+  font-size: 12px;
+  color: var(--Grayish-Blue);
+}
+.pattern-quotes{
+  position: absolute;
+
+}
+.pattern-quotes img {
+  width: 50px;
+}
+
+.attribution p{
+  text-align: center;
+  font-size: 13px;
+  color: var(--Dark-Blue);
+
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--Dark-Blue);
+}
+.attribution a:hover{
+  color: var(--Grayish-Blue);
+}
+@media(min-width:900px){
+  .conteiner__card{
+    width: 850px;
+  }
+  .conteiner__card{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .conteiner__card-img{
+    grid-column: 2/3;
+  }
+  .container__card-txt{
+    font-size: 20px;
+    grid-row: 1/2;
+  }
+
+}
