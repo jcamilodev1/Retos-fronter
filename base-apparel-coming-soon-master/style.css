@@ -74,12 +74,18 @@
     hsl(0, 74%, 74%) 100%
   );
   border-radius: 100px;
+  cursor: pointer;
+}
+#error {
+  display: none;
+  position: relative;
+  left: -100px;
 }
 form {
   position: relative;
   display: grid;
   align-items: center;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
 }
 .footer {
   margin-top: 40px;
@@ -100,6 +106,7 @@ form {
     display: grid;
     max-width: 850px;
     grid-template-columns: auto auto;
+    margin: 0 auto;
   }
   .article-logo {
     grid-column: 1/3;
