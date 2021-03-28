@@ -1,0 +1,71 @@
+$Blue: hsl(223, 87%, 63%);
+$font: 'Libre Franklin', sans-serif;
+$Pale-Blue: hsl(223, 100%, 88%);
+$Ligh-Red: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$VeryDarkBlue: hsl(209, 33%, 12%);
+@mixin section {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main{
+  font-family: $font;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+}
+.section__form{
+  @include section();
+  .container__data{
+    .data__title--name::after{
+      content: '.';
+      color: $Blue;
+    }
+    .data__title--description{
+      margin-top: 30px;
+      span{
+        font-weight: 300;
+        color: $Gray;
+      }
+    }
+    p{
+      margin-top: 15px;
+    }
+  }
+  .container__form{
+    input{
+      margin-top: 40px;
+      padding:  10px 20px;
+      border: 1px solid $Pale-Blue;
+      border-radius: 50em;
+      outline: none;
+    }
+    ::placeholder{
+      color: $Gray;
+    }
+    button{
+      width: 100%;
+      margin-top: 15px;
+      padding:  10px 20px;
+      border-radius: 50em;
+      background-color: $Blue;
+      border: none;
+      color: white;
+      font-weight: 700;
+    }
+  }
+}
+.section__img{
+  @include section();
+  img{
+    width:100%
+  }
+}
