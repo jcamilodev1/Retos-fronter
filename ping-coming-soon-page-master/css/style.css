@@ -77,28 +77,28 @@
   padding: 20px;
   text-align: center;
 }
-.footer .footer__social {
+.footer__social {
   color: #4f7df3;
   margin-bottom: 15px;
 }
-.footer .footer__social span {
+.footer__social span {
   padding: 5px;
   border: 1px solid #c2d3ff;
   border-radius: 50%;
   margin-left: 20px;
 }
-.footer .footer__copy {
+.footer__copy {
   color: #969696;
   margin-bottom: 15px;
 }
-.footer .footer__atributtion {
+.footer__atributtion {
   color: #969696;
 }
-.footer .footer__atributtion a {
+.footer__atributtion a {
   color: #969696;
   text-decoration: none;
 }
-.footer .footer__atributtion a:hover {
+.footer__atributtion a:hover {
   color: #4f7df3;
 }
 

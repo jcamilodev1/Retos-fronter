@@ -61,10 +61,11 @@ $VeryDarkBlue: hsl(209, 33%, 12%);
       border: none;
       color: white;
       font-weight: 700;
+      &:hover{
+        background-color: $Pale-Blue
+      }
     }
-    button:hover{
-      background-color: $Pale-Blue
-    }
+
   }
 }
 .section__img{
@@ -75,7 +76,7 @@ $VeryDarkBlue: hsl(209, 33%, 12%);
 }
 .footer{
   @include section();
-  .footer__social{
+  &__social{
     color: $Blue;
     margin-bottom: 15px;
     span{
@@ -85,18 +86,19 @@ $VeryDarkBlue: hsl(209, 33%, 12%);
       margin-left: 20px;
     }
   }
-  .footer__copy{
+  &__copy{
     color: $Gray;
     margin-bottom: 15px;
   }
-  .footer__atributtion{
+  &__atributtion{
     color: $Gray;
     a{
       color: $Gray;
       text-decoration: none;
+      &:hover{
+        color: $Blue;
+      }
     }
-    a:hover{
-      color: $Blue;
-    }
+    
   }
 }
