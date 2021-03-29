@@ -1,0 +1,28 @@
+.footer{
+  @include section();
+  &__social{
+    color: $Blue;
+    margin-bottom: 15px;
+    span{
+      padding: 5px;
+      border: 1px solid $Pale-Blue;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+  }
+  &__copy{
+    color: $Gray;
+    margin-bottom: 15px;
+  }
+  &__atributtion{
+    color: $Gray;
+    a{
+      color: $Gray;
+      text-decoration: none;
+      &:hover{
+        color: $Blue;
+      }
+    }
+    
+  }
+}

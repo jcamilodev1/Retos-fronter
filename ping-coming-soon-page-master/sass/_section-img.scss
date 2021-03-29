@@ -1,0 +1,6 @@
+.section__img{
+  @include section();
+  img{
+    width:100%
+  }
+}
