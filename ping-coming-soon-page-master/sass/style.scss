@@ -17,9 +17,11 @@ $VeryDarkBlue: hsl(209, 33%, 12%);
   box-sizing: border-box;
 }
 .main{
+  max-width: 650px;
   font-family: $font;
   display: grid;
   justify-content: center;
+  margin: 0 auto;
   padding: 20px;
 }
 .section__form{
@@ -41,8 +43,8 @@ $VeryDarkBlue: hsl(209, 33%, 12%);
     }
   }
   .container__form{
+    margin-top: 20px;
     input{
-      margin-top: 40px;
       padding:  10px 20px;
       border: 1px solid $Pale-Blue;
       border-radius: 50em;
@@ -52,8 +54,7 @@ $VeryDarkBlue: hsl(209, 33%, 12%);
       color: $Gray;
     }
     button{
-      width: 100%;
-      margin-top: 15px;
+      margin-top: 10px;
       padding:  10px 20px;
       border-radius: 50em;
       background-color: $Blue;
@@ -61,11 +62,41 @@ $VeryDarkBlue: hsl(209, 33%, 12%);
       color: white;
       font-weight: 700;
     }
+    button:hover{
+      background-color: $Pale-Blue
+    }
   }
 }
 .section__img{
   @include section();
   img{
     width:100%
+  }
+}
+.footer{
+  @include section();
+  .footer__social{
+    color: $Blue;
+    margin-bottom: 15px;
+    span{
+      padding: 5px;
+      border: 1px solid $Pale-Blue;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+  }
+  .footer__copy{
+    color: $Gray;
+    margin-bottom: 15px;
+  }
+  .footer__atributtion{
+    color: $Gray;
+    a{
+      color: $Gray;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $Blue;
+    }
   }
 }
